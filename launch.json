@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "MADToken",
+    "name": "Muttualy Assured Destruction",
+    "symbol": "MAD",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {"poolBps":7000,"initialMarketCapWei":"9000000000000000000000","remainderTo":"0x49c95a6ee32e9c0dc7a353c078e6158304bbce9f"},
+  "notes": "MADToken mints 1,000,000,000 MAD with 18 decimals once to msg.sender in its no-argument constructor. It has no owner, further minting, transfer fees, pause or blacklist. Holders may burn their own tokens, reducing total supply. There are no application contracts. The pool pairs with IMD at a 1.25% fee and tick spacing 60. initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
